@@ -1,0 +1,125 @@
+<?php include '_header.php' ?>
+<?php
+		  	$nombre = $_POST["Nombre"];
+		  	$apellido = $_POST["Apellido"];
+		  	$FechaNacimiento = $_POST["FechaNacimiento"];
+		  	$sexo = $_POST["Sexo"];
+		  	$DNI = $_POST["DNI"];
+		  	$direccion = $_POST["Direccion"];
+		  	$telefono = $_POST["Telefono"];
+		  	$Email = $_POST["Email"];
+		  	$contrasena = $_POST["Contrasena"];
+		  	$servidor = "localhost";
+			$usuario = "marcadores";
+			$passw = "marcadores";
+			$basedatos = "marcadores";
+?>
+
+<?php
+	if (isset($_POST["enviar"])) {
+		# code...
+	$conexion = mysql_connect($servidor,$usuario,$passw);	
+		//1.- seleccionar la base de datos
+	mysql_select_db($basedatos, $conexion);
+
+	//2.- crea consulta
+	$sql = "
+	INSERT INTO Usuarios (Nombre, Apellido, FechaNacimiento, Sexo, DNI, Direccion, Telefono, Email, contrasena)
+	VALUES ('$nombre', '$apellido', $FechaNacimiento,'$sexo', '$DNI','$direccion', $telefono,'$Email','$contrasena') ";
+
+	//3.- ejecuta la consulta
+	mysql_query($sql, $conexion);
+
+	
+	/**
+	 * terminar conexión
+	 */
+	mysql_close($conexion);
+
+	}
+	
+?>
+		<form action="registros.php" method="post">	
+
+			<div class="container">
+      <div class="row">
+      <!-- <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+           <A href="edit.html" ></A>
+        <A href="edit.html" ></A>
+       <br>
+<p class=" text-info"></p>
+      </div> -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   <form action="registros.php" method="post">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">REGISTROS</h3>  
+
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="left"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+                
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Nombre :</td>
+                        <td> <input type="text" name="Nombre" value= "" placeholder="" /></td>
+                      </tr>
+
+                      <tr>
+                        <td>Apellido:</td>
+                        <td> <input type="text" name="Apellido" value= "" placeholder="" /></td>
+                      </tr>
+                      <tr>
+                        <td>Año de nacimiento:</td>
+                        <td> <input type="date" name="FechaNacimiento" value= "" placeholder="" /></td>
+                      </tr>
+
+                        <tr>
+                        <td>Sexo</td>
+                        <td> <input type="text" name="Sexo" value= "" placeholder="" /></td>
+                      </tr>
+                      <tr>
+                        <td>DNI</td>
+                        <td> <input type="text" name="DNI" value= "" placeholder="" /></td>
+                      </tr>
+                      <tr>
+                        <td>Direccion</td>
+                        <td> <input type="text" name="Direccion" value= "" placeholder="" /></td>
+                      </tr>
+                   
+                         <tr>
+                        <tr>
+                        <td>Telefono</td>
+                        <td> <input type="text" name="Telefono" value= "" placeholder="" /></td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td><input type="texto" name="Email" value= "" placeholder="" </td>
+                      </tr>
+                        <td>Contraseña</td>
+                        <td><input type="password" name="contrasena" value= "" placeholder="" /></td><br>
+                        </td>
+                        </tr>
+                        
+						</td>
+                        
+                           
+                     
+                    </tbody>
+                  </table>
+                  
+
+					<button type="submit" name="enviar" class="btn btn-primary">
+  						<i class="icon-user icon-white"></i> Guardar usuario
+  					</button>
+
+                </div>
+              </div>
+            </div>
+
+                      		
+<?php include '_footer.php' ?>

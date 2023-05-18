@@ -1,0 +1,34 @@
+[
+    {
+        "link":"../Patica 1/index.html",
+        "nombre":"Practica 1"
+    },
+    {
+        "link":"../TAREA 2/index.html",
+        "nombre":"Practica 2"
+    },
+    {
+        "link":"../Menu/index.html",
+        "nombre":"Practica 3"
+    },
+    {
+        "link":"../Cedula/index.html",
+        "nombre":"Practica 4"
+    },
+    {
+        "link":"../Menu con js/index.html",
+        "nombre":"Practica 5"
+    },
+    {
+        "link":"../Formulario Medico/Registro.html",
+        "nombre":"Practica 6"
+    },
+    {
+        "link":"../Formulario de contacto/formulario.html",
+        "nombre":"Practica 7"
+    },
+    {
+        "link":"../formulariio con grafico/index.html",
+        "nombre":"Practica 8"
+    }
+]

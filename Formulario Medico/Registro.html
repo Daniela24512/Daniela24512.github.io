@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+</head>
+<body>
+
+    <div class="container">
+        <header>REGISTRO MEDICO</header>
+
+        <div class="progress-bar">
+            <div class="paso">
+                <p> Paciente</p>
+                <div class="num">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+
+            </div>
+            <div class="paso">
+                <p>Familiar</p>
+                <div class="num">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+
+            </div>
+
+            <div class="paso">
+                <p>Condicion</p>
+                <div class="num">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+
+            </div>
+
+            <div class="paso">
+                <p>Internamientos</p>
+                <div class="num">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="form-princ">
+            <form action="#">
+                <!--PAGINA 1-->
+              <div class="pagina movPag">
+                  <div class="titulo"> Datos Personales del Paciente</div>
+                  <div class="Campo">
+                      <div class="label">Nombres:</div>
+                      <input type="text" id="nombres" placeholder="nombres">
+                   </div>
+
+                  <div class="Campo">
+                      <div class="label">Apellidos:</div>
+                      <input type="text" id="Apellido1" placeholder="Apellidos">
+                   </div>
+
+                  
+                 <div class="Campo">
+                     <div class="label">Fecha de Nacimiento:</div>
+                     <input type="date" id="fechaNac" max="2015-12-31" value="2015-02-03">
+                  </div>
+
+                  <div class="Campo">
+                     <div class="label">Sexo:</div>
+                        <select  id="sexo">
+                        <option value="-1" disabled selected>Elija una opcion </option>
+                        <option value="0"> Masculino</option>
+                        <option value="1">Femenino</option>
+                        <option value="2"> Sin Especificar</option>
+                       </select>
+                  </div>
+
+                 <div class="Campo">
+                      <div class="label">Documento de indentidad:</div>
+                      <input type="tel" id="DocIden" placeholder="Documento de identidad">
+                 </div>
+
+                 <div class="Campo">
+                        <div class="label">Numero Telefonico:</div>
+                        <input type="tel" name="Telefono">
+                  </div>
+
+                  <div class="Campo sigPag">
+                      <button>Siguiente</button>
+                  </div>
+              </div>
+
+
+              <!--PAGINA 2-->
+              <div class="pagina">
+                  <div class="titulo">Datos del Familiar</div>
+                  <div class="Campo">
+                      <div class="label">Nombre y Apellido:</div>
+                      <input type="text" id="nombres" placeholder="Nombres">
+                 </div>
+
+                    <div class="Campo">
+                     <div class="label">Parentesco:</div>
+                     <select  id="Parentesco">
+                        <option value="-1" disabled selected>Elija una opcion </option>
+                        <option value="0"> Madre</option>
+                        <option value="1">Padre</option>
+                        <option value="2"> Hijo</option>
+                        <option value="2"> Espos@</option>
+                        <option value="2"> Hermano</option>
+                        <option value="2"> Tio</option>
+                        <option value="2"> Otro</option>
+                      </select>
+                 </div>
+
+                 <div class="Campo">
+                      <div class="label">Fecha de Nacimiento:</div>
+                      <input type="date" id="fechaNac" max="2015-12-31" value="2015-02-03">
+                 </div>
+
+                 <div class="Campo">
+                   <div class="label">Sexo:</div>
+                      <select  id="sexo">
+                      <option value="-1" disabled selected>Elija una opcion </option>
+                      <option value="0"> Masculino</option>
+                      <option value="1">Femenino</option>
+                      <option value="2"> Sin Especificar</option>
+                     </select>
+                 </div>
+
+                  <div class="Campo">
+                     <div class="label">Documento de indentidad:</div>
+                      <input type="tel" id="DocIden" placeholder="Documento de identidad">
+                 </div>
+
+                 <div class="Campo">
+                      <div class="label">Numero Telefonico:</div>
+                       <input type="tel" name="Telefono">
+                 </div>
+
+                  <div class="Campo btns">
+                     <button class="volver-pag1 volver">Atras</button>
+                     <button class="adelante-pag3 adelante">Siguiente</button>
+                 </div>
+             </div>
+             
+                <!--PAGINA 3-->
+              <div class="pagina">
+                 <div class="titulo">Condicion del Paciente</div>
+                       <div class="Campo">
+                       <div class="label">Nombre de la enfermedad:</div>
+                       <input type="text" id="nomEnf" >
+                 </div>
+
+                  <div class="Campo">
+                       <div class="label">Tiempo con la enfermedad:</div>
+                       <input type="text" id="Tiemenf">
+                 </div>
+
+                 <div class="Campo">
+                     <div class="label">Detalles de la condicion:</div>
+                     <input type="text">
+                 </div>
+
+                 <div class="Campo btns">
+                     <button class="volver-pag2 volver">Atras</button>
+                      <button class="adelante-pag4 adelante">Siguiente</button>
+                 </div>
+             </div>
+
+                <!--PAGINA 4-->
+              <div class="pagina">
+                     <div class="titulo">Internamientos Realizados</div>
+                     <div class="Campo">
+                     <div class="label">Medico de Cabecera:</div>
+                     <input type="text" id="MedCab" >
+                 </div>
+
+                  <div class="Campo">
+                      <div class="label">Centro Medico:</div>
+                      <input type="text" id="CenMed">
+                 </div>
+
+                    <div class="Campo">
+                       <div class="label">Fecha:</div>
+                       <input type="date">
+                 </div> 
+
+                 <div class="Campo btns">
+                     <button class="volver-pag3 volver">Atras</button>
+                     <button class="adelante-pag5 adelante ">Completar</button>
+                 </div>
+              </div>
+
+
+            </form>
+
+        </div>
+        
+    </div>
+ 
+    <script src="Formulario.js"> </script>
+</body>
+</html>

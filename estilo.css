@@ -1,0 +1,50 @@
+*{
+    background: url(https://www.ies-consulting.com/archivos/uploads/2021/07/areas-de-pr%C3%A1cticas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: auto;
+    width:50%;
+}
+
+a{
+    padding: 17px 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #08499a;
+    border: 2px solid #08499a;
+    color: #f6f1f6;
+    outline: none;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    width: 340px;
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(43, 161, 161, 0.808);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+
