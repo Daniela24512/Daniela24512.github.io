@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condominio Grupo 3 - Informaciones y Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #161615;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .news-section, .info-section {
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 1%;
+        }
+
+        .news-section {
+            width: 70%;
+        }
+
+        .info-section {
+            width: 29%;
+        }
+
+        .news-item, .info-item {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .read-more-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Informaciones y Noticias</h1>
+    </header>
+
+    <div class="container">
+        <div class="news-section">
+            <h2>Noticias</h2>
+            <!-- Ejemplos de noticias -->
+            <div class="news-item">
+                <img src="images/Imagen1.jpg" alt="Noticia 1">
+                <h2>Noticias Actualizadas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac lacinia nisi, id ultricies nisl.</p>
+                <p>Integer vitae enim eu odio ultricies blandit. Proin vulputate, neque a tincidunt condimentum, justo libero.</p>
+                <div>
+                    
+                    <p><h3>Renovación del Área Común:</h3>
+                    Fecha: 10 de noviembre de 2023
+                    Noticia: El condominio de apartamentos anuncia emocionantes planes para renovar el área común. Los residentes pueden esperar una modernización completa del espacio, con nuevas áreas de recreación, mobiliario contemporáneo y un diseño paisajístico más atractivo. La junta directiva está entusiasmada por mejorar la calidad de vida en el condominio.</p>
+                    <img src="images/Imagen2.jpg" alt="Noticia 1">
+                    <a href="#" class="read-more-btn">Seguir leyendo</a>
+                </div>
+                <div>
+                    <p><h3>Evento de Construcción Amigable:</h3>
+                    Fecha: 15 de diciembre de 2023
+                    Noticia: ¡El condominio organiza un evento de construcción amigable! Los residentes son invitados a participar en la decoración de las áreas comunes para las festividades. Desde la creación de un árbol de Navidad comunitario hasta la instalación de luces festivas, se espera que esta iniciativa fomente la participación y el espíritu festivo.</p>
+                    <img src="images/Imagen1.jpg" alt="Noticia 1">
+                    <a href="#" class="read-more-btn">Seguir leyendo</a>
+                </div>
+                <div>  
+                    <p><h3>Nuevo Sistema de Seguridad:</h3>
+                    Fecha: 5 de febrero de 2024
+                    Noticia: El condominio invierte en un sistema de seguridad de última generación para garantizar la tranquilidad de sus residentes. Cámaras de vigilancia mejoradas, acceso con tarjetas electrónicas y sistemas de intercomunicación son algunas de las características que se implementarán para fortalecer la seguridad en el condominio.</p>
+                    <img src="images/Imagen2.jpg" alt="Noticia 1">    
+                    <a href="#" class="read-more-btn">Seguir leyendo</a>
+                </div>
+                <div>
+                    <p><h3>Club de Lectura Comunitario:</h3>
+                    Fecha: 20 de abril de 2024
+                    Noticia: Se lanza un club de lectura comunitario en el condominio. Los residentes están invitados a participar en discusiones mensuales sobre diversos géneros literarios. La iniciativa tiene como objetivo fomentar la comunidad y proporcionar un espacio para compartir intereses intelectuales.</p>
+                    <img src="images/Imagen1.jpg" alt="Noticia 1">
+                    <a href="#" class="read-more-btn">Seguir leyendo</a>
+                </div>
+                <div>
+                    <p><h3>Campaña de Concienciación Ambiental:</h3>
+                    Fecha: 8 de julio de 2024
+                    Noticia: El condominio inicia una campaña de concienciación ambiental para promover prácticas sostenibles entre los residentes. Se implementarán programas de reciclaje, se fomentará el ahorro de energía y se organizarán eventos educativos sobre la importancia de cuidar el medio ambiente dentro del hogar.</p>
+                    <img src="images/Imagen2.jpg" alt="Noticia 1">        
+                    <a href="#" class="read-more-btn">Seguir leyendo</a>
+                </div>    
+            </div>
+    
+            <div class="column">
+                <h2>Informaciones Importantes</h2>
+                <p>Phasellus consequat, tortor vitae auctor dapibus, libero velit aliquet turpis, nec congue urna mauris id justo.</p>
+    
+                <p>Nullam commodo, sapien nec malesuada hendrerit, odio elit cursus odio, quis consectetur nulla metus vel justo.</p>
+                <a href="#" class="read-more-btn">Seguir leyendo</a>
+            </div>
+            <!-- Repetir este bloque para más noticias -->
+
+            <!-- Sección de paginación -->
+            <div class="pagination">
+                <span>Página 1</span>
+                <a href="#">Siguiente</a>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Informaciones</h2>
+            <h2>Informaciones Importantes</h2>
+            <p>Phasellus consequat, tortor vitae auctor dapibus, libero velit aliquet turpis, nec congue urna mauris id justo.</p>
+
+            <p>Nullam commodo, sapien nec malesuada hendrerit, odio elit cursus odio, quis consectetur nulla metus vel justo.</p>
+            <div class="info-item">
+                <img src="images/Imagen2.jpg" alt="Información 1">
+                <p>Descripción de la información 1...</p>
+                <div>
+                    
+                    <p><h3>Renovación del Área Común:</h3>
+                    Fecha: 10 de noviembre de 2023
+                    Noticia: El condominio de apartamentos anuncia emocionantes planes para renovar el área común. Los residentes pueden esperar una modernización completa del espacio, con nuevas áreas de recreación, mobiliario contemporáneo y un diseño paisajístico más atractivo. La junta directiva está entusiasmada por mejorar la calidad de vida en el condominio.</p>
+                </div>
+                <div>
+                    <p><h3>Evento de Construcción Amigable:</h3>
+                    Fecha: 15 de diciembre de 2023
+                    Noticia: ¡El condominio organiza un evento de construcción amigable! Los residentes son invitados a participar en la decoración de las áreas comunes para las festividades. Desde la creación de un árbol de Navidad comunitario hasta la instalación de luces festivas, se espera que esta iniciativa fomente la participación y el espíritu festivo.</p>
+                </div>
+                <div>  
+                    <p><h3>Nuevo Sistema de Seguridad:</h3>
+                    Fecha: 5 de febrero de 2024
+                    Noticia: El condominio invierte en un sistema de seguridad de última generación para garantizar la tranquilidad de sus residentes. Cámaras de vigilancia mejoradas, acceso con tarjetas electrónicas y sistemas de intercomunicación son algunas de las características que se implementarán para fortalecer la seguridad en el condominio.</p>
+                </div>
+                <div>
+                    <p><h3>Club de Lectura Comunitario:</h3>
+                    Fecha: 20 de abril de 2024
+                    Noticia: Se lanza un club de lectura comunitario en el condominio. Los residentes están invitados a participar en discusiones mensuales sobre diversos géneros literarios. La iniciativa tiene como objetivo fomentar la comunidad y proporcionar un espacio para compartir intereses intelectuales.</p>
+                </div>
+                <div>
+                    <p><h3>Campaña de Concienciación Ambiental:</h3>
+                    Fecha: 8 de julio de 2024
+                    Noticia: El condominio inicia una campaña de concienciación ambiental para promover prácticas sostenibles entre los residentes. Se implementarán programas de reciclaje, se fomentará el ahorro de energía y se organizarán eventos educativos sobre la importancia de cuidar el medio ambiente dentro del hogar.</p>      
+                </div>    
+                <img src="images/_video.jpg" alt="Información 1">
+                <a href="#" class="read-more-btn">Seguir leyendo</a>
+            </div>
+            <!-- Repetir este bloque para más informaciones -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Condominio Grupo 3. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

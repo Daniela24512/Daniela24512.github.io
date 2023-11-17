@@ -1,0 +1,85 @@
+/* Estilos para el botón de contacto del representante */
+button.contact-representative {
+    background-color: #0000FF; /* Color azul */
+    color: white; /* Color del texto en el botón (blanco) */
+    text-decoration: none; /* Eliminar subrayado del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 20px; /* Espaciado del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón en estado hover (cuando el mouse está encima) */
+button.contact-representative:hover {
+    background-color: #5555FF; /* Cambia el color de hover a tu preferencia */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00695c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+a.contact-representative-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.contact-representative-button:hover {
+    background-color: #555;
+}
